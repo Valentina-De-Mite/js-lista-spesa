@@ -2,10 +2,13 @@
 Data una lista della spesa, stampare sulla pagina (anche brutalmente, basta che si vedano) gli elementi della lista individualmente con un ciclo while.
 */
 
-const shoppingList
+const shoppingLists = ["pane", "pasta", "tofu", "avocado", "pomodori"];
 
-let 
+let i = 0;
 
-while () {
-    
+while (i < shoppingLists.length) {
+  console.log(shoppingLists[i]);
+  document.getElementById("shoppingListok").innerHTML +=
+    " - " + shoppingLists[i] + " ;";
+  i++;
 }
